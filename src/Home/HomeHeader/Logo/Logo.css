@@ -1,0 +1,14 @@
+div.header_logo {
+  margin-left: 15px;
+}
+
+div.header_logo div.logo_wrapper {
+  width: 45px;
+}
+
+div.header_logo div.logo_wrapper img {
+  display: block;
+  width: 100%;
+  -webkit-filter: drop-shadow(5px 5px 4px #b6b6b6);
+          filter: drop-shadow(5px 5px 4px #b6b6b6);
+}

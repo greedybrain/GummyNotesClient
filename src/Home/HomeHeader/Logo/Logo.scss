@@ -1,0 +1,12 @@
+div.header_logo {
+        margin-left: 15px;
+        div.logo_wrapper {
+                width: 45px;
+
+                img {
+                        display: block;
+                        width: 100%;
+                        filter: drop-shadow(5px 5px 4px #b6b6b6);
+                }
+        }
+}
