@@ -1,0 +1,27 @@
+div.menu_body ul {
+  padding: 0 8%;
+}
+
+div.menu_body ul li {
+  margin-top: 25px;
+}
+
+div.menu_body ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.menu_body ul li a div.menu_icon {
+  color: #818181;
+  text-shadow: 1px 1px 1px #00000099;
+  font-size: 1.3rem;
+}
+
+div.menu_body ul li a div.menu_label {
+  margin-left: 10px;
+  color: #9b9b9b;
+}
