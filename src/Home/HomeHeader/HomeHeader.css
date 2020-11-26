@@ -1,5 +1,6 @@
 div.home_header {
-  padding: 20px 8% 0;
+  padding: 0 8%;
+  height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,6 +10,7 @@ div.home_header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-bottom: 1px solid #cacaca38;
 }
 
 div.home_header div.menu_button_and_logo {
@@ -18,4 +20,10 @@ div.home_header div.menu_button_and_logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+div.home_header div.menu_button_and_logo h3 {
+  margin-left: 20px;
+  font-size: 1.4rem;
+  color: #818181;
 }
