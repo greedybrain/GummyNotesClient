@@ -1,8 +1,21 @@
-div.note_data i {
-  color: #7bff00;
-  font-size: 2rem;
-  display: inline-block;
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+div.note_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.note_data div.note_count {
+  border-radius: 50%;
+  padding: 35%;
+  font-size: .8rem;
+  position: relative;
+  z-index: 1;
+  background-color: #ff5872;
+  text-shadow: 1px 1px 2px rgba(80, 80, 80, 0.6);
+  -webkit-box-shadow: 0px 4px 13px -3px rgba(0, 0, 0, 0.64);
+  box-shadow: 0px 4px 13px -3px rgba(0, 0, 0, 0.64);
+  color: #fff;
 }
