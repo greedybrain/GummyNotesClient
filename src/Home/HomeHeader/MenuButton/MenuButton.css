@@ -3,8 +3,8 @@ div.menu_button {
 }
 
 div.menu_button div.bar {
-  height: 4px;
-  width: 30px;
+  height: 2px;
+  width: 25px;
   background-color: #444444;
   border-radius: 20px;
   -webkit-box-shadow: -2px 5px 8px -4px rgba(0, 0, 0, 0.82);
@@ -17,5 +17,5 @@ div.menu_button div.bar:not(:last-child) {
 
 div.menu_button div.bar1,
 div.menu_button div.bar3 {
-  width: 20px;
+  width: 15px;
 }
