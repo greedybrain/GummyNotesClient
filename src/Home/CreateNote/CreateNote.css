@@ -7,13 +7,15 @@ div.new_note_button_wrapper {
 
 div.new_note_button_wrapper div.button {
   cursor: pointer;
-  padding: 15px;
+  padding: 10px;
   border-radius: 50px;
-  background: none;
+  background-color: transparent;
 }
 
-div.new_note_button_wrapper div.button i {
-  color: #ffd151;
+div.new_note_button_wrapper div.button span {
+  display: inline-block;
   font-size: 2rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  text-shadow: 1px 1px 15px #000000cc;
 }
