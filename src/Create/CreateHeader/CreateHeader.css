@@ -1,0 +1,17 @@
+div.create_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 25px;
+  border-bottom: 1px solid #cacaca38;
+}
+
+div.create_header div.back_arrow {
+  font-size: 1.3rem;
+  color: #ff5872;
+  text-shadow: 1px 2px 0px #a2a2a2b8;
+  margin-right: 15px;
+}
