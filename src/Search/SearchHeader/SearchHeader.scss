@@ -1,0 +1,19 @@
+div.search_header {
+        display: flex;
+        align-items: center;
+        padding: 15px 25px;
+        border-bottom: 1px solid #cacaca38;
+
+        div.back_arrow {
+                font-size: 1.3rem;
+                margin-right: 15px;
+                color: #00c8ff;
+                text-shadow: 1px 2px 0px #a2a2a2b8;
+        }
+        div.search_header_label {
+                h3 {
+                        font-size: 1.2rem;
+                        color: #818181;
+                }
+        }
+}
