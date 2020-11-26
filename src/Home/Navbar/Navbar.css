@@ -3,6 +3,7 @@ nav.navbar {
   bottom: 0;
   width: 100%;
   padding: 20px 8%;
+  height: 10vh;
 }
 
 nav.navbar ul {
@@ -12,10 +13,13 @@ nav.navbar ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 nav.navbar ul li {
-  border: 1px solid #dadada38;
   padding: 10px 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,21 +35,21 @@ nav.navbar ul li a {
 nav.navbar ul li.navitem a i {
   display: inline-block;
   font-size: 1.7rem;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 2px 0px #a2a2a2b8;
 }
 
-nav.navbar ul li.item1 {
-  background-color: #ffa0ef;
+nav.navbar ul li.item1 a i {
+  color: #ff5872;
 }
 
-nav.navbar ul li.item2 {
-  background-color: #00c8ff;
+nav.navbar ul li.item2 a i {
+  color: #00c8ff;
 }
 
-nav.navbar ul li.item3 {
-  background-color: #ffe200;
+nav.navbar ul li.item3 a i {
+  color: #ffe200;
 }
 
-nav.navbar ul li.item4 {
-  background-color: #7bff00;
+nav.navbar ul li.item4 a i {
+  color: #a5a5a5;
 }
