@@ -22,7 +22,12 @@ class Home extends Component {
                         <div className="home_container">
                                 {
                                         this.state.showMenuDrawer && (
-                                                <MenuDrawer toggleMenuDrawer={this.toggleMenuDrawer} showMenuDrawer={this.state.showMenuDrawer} />
+                                                <MenuDrawer 
+                                                        toggleMenuDrawer={this.toggleMenuDrawer} 
+                                                        showMenuDrawer={this.state.showMenuDrawer} 
+                                                        history={this.props.history}
+                                                        dispatchLogout={this.props.dispatchLogout}
+                                                />
                                         )
                                 }
                                 <HomeHeader toggleMenuDrawer={this.toggleMenuDrawer} />
