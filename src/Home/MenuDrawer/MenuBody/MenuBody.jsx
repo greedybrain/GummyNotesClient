@@ -1,8 +1,22 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './MenuBody.css'
+import axios from 'axios'
 
-const MenuBody = () => {
+const MenuBody = ({ history, dispatchLogout}) => {
+        const handleLogout = async () => {
+                try {
+                        await axios.delete(
+                                'http://localhost:5000/api/v1/auth/logout',
+                                { withCredentials: true }
+                        )
+                        dispatchLogout()
+                        history.push('/login')
+                } catch (error) {
+                        console.log(error)
+                }
+        }
+
         return (
                 <div className="menu_body">
                         <ul>
@@ -16,8 +30,8 @@ const MenuBody = () => {
                                                 </div>
                                         </NavLink>
                                 </li>
-                                <li className="menu_item">
-                                        <NavLink to="#">
+                                <li className="menu_item" onClick={handleLogout}>
+                                        <NavLink to='#'>
                                                 <div className="menu_icon">
                                                         <i className="fas fa-user-circle"></i>
                                                 </div>
@@ -37,7 +51,7 @@ const MenuBody = () => {
                                         </NavLink>
                                 </li>
                                 <li className="menu_item">
-                                        <NavLink to="#">
+                                        <NavLink to="#" onClick={handleLogout}>
                                                 <div className="menu_icon">
                                                         <i className="fas fa-sign-out-alt"></i>
                                                 </div>
