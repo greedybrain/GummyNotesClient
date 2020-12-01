@@ -7,7 +7,7 @@ const Navbar = () => {
                 <nav className="navbar">
                         <ul>
                                 <li className="navitem item1">
-                                        <NavLink to="/">
+                                        <NavLink to="/home">
                                                 <i className="fas fa-home"></i>
                                         </NavLink>
                                 </li>

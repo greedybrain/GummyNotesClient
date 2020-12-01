@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import Routes from './Routes'
-import axios from 'axios'
+// import axios from 'axios'
 
 class App extends Component {
   state = {
@@ -8,24 +8,24 @@ class App extends Component {
     loggedIn: false
   }
 
-  getCurrentUser = async () => {
-    try {
-        const response = await axios(
-          'http://localhost:5000/api/v1/users/me',
-          { withCredentials: true },
-        )
-        this.setState({
-          user: response.data,
-          loggedIn: true
-        })
-    } catch (error) {
-      console.error(error.message)
-    }
-  }
+  // getCurrentUser = async () => {
+  //   try {
+  //       const response = await axios(
+  //         'http://localhost:5000/api/v1/users/me',
+  //         { withCredentials: true },
+  //       )
+  //       this.setState({
+  //         user: response.data,
+  //         loggedIn: true
+  //       })
+  //   } catch (error) {
+  //     console.error(error.message)
+  //   }
+  // }
 
-  componentDidMount() {
-    this.getCurrentUser()
-  }
+  // componentDidMount() {
+  //   this.getCurrentUser()
+  // }
 
   dispatchSignup = userInfo => {
     this.setState({

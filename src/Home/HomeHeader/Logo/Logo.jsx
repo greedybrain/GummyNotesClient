@@ -7,7 +7,7 @@ const Logo = () => {
         return (
                 <div className="header_logo">
                         <div className="logo_wrapper">
-                                <NavLink to="/">
+                                <NavLink to="/home">
                                         <img src={gummyNotesLogo} alt="logo"/>
                                 </NavLink>
                         </div>

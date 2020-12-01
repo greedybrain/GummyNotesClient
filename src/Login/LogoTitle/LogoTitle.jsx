@@ -7,7 +7,7 @@ const LogoTitle = () => {
         return (
                 <div className="logo_title">
                         <div className="logo_title_wrapper">
-                                <NavLink to='/'>
+                                <NavLink to='/home'>
                                         <img src={logo_title_image} alt="logo title"/>
                                 </NavLink>
                         </div>

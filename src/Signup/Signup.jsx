@@ -58,7 +58,7 @@ const Signup = ({ history, dispatchSignup }) => {
                                 { withCredentials: true }
                         )
                         dispatchSignup(response.data)
-                        history.push('/')
+                        history.push('/home')
                         setName('')
                         setEmail('')
                         setPassword('')

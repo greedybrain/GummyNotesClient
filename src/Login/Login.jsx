@@ -42,7 +42,7 @@ const Login = ({ history, dispatchLogin }) => {
                                 { withCredentials: true }
                         )
                         dispatchLogin(response.data)
-                        history.push('/')
+                        history.push('/home')
                         setEmail('')
                         setPassword('')
                 } catch (err) {
