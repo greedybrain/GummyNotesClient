@@ -5,7 +5,8 @@ import Notes from './Notes/Notes'
 import { notes } from '../../data'
 
 const HomeBody = () => {
-        const [allNotes, setAllNotes] = useState(notes)
+        const [allNotes, setAllNotes] = useState([])
+        setAllNotes(notes)
         return (
                 <div className="body">
                         <Notes allNotes={allNotes} />
