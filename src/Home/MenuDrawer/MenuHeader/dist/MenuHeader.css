@@ -1,0 +1,20 @@
+div.menu_header {
+  padding: 0 8%;
+  border-bottom: 1px solid #cacaca38;
+  height: 10vh;
+}
+div.menu_header div.close_and_logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+div.menu_header div.close_and_logo div.header_logo {
+  margin: 0;
+}
+div.menu_header div.close_and_logo div.header_logo div.logo_wrapper {
+  width: 45px;
+}
+div.menu_header div.close_and_logo div.close {
+  cursor: pointer;
+}
