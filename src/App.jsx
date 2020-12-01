@@ -1,4 +1,4 @@
-import { useEffect, Component } from 'react'
+import { Component } from 'react'
 import Routes from './Routes'
 import axios from 'axios'
 
