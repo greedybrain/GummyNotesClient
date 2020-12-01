@@ -12,17 +12,20 @@ const Routes = ({ loggedIn, dispatchLogout, dispatchLogin, dispatchSignup }) => 
                         <Route 
                                 exact
                                 path="/"
-                                render={routerProps => !loggedIn ? <Redirect to='/login' /> : <Home { ...routerProps } loggedIn={loggedIn} dispatchLogout={dispatchLogout} />}
+                                // render={routerProps => !loggedIn ? <Redirect to='/login' /> : <Home { ...routerProps } loggedIn={loggedIn} dispatchLogout={dispatchLogout} />}
+                                render={routerProps => <Home { ...routerProps } loggedIn={loggedIn} dispatchLogout={dispatchLogout} />}
                         />
                         <Route 
                                 exact
                                 path="/login"
-                                render={ routerProps => loggedIn ? <Redirect to='/' /> : <Login dispatchLogin={dispatchLogin} {...routerProps} /> }
+                                // render={ routerProps => loggedIn ? <Redirect to='/' /> : <Login dispatchLogin={dispatchLogin} {...routerProps} /> }
+                                render={ routerProps => <Login dispatchLogin={dispatchLogin} {...routerProps} /> }
                         />
                         <Route 
                                 exact
                                 path="/signup"
-                                render={ routerProps => loggedIn ? <Redirect to='/' /> : <Signup dispatchSignup={dispatchSignup} {...routerProps} /> }
+                                // render={ routerProps => loggedIn ? <Redirect to='/' /> : <Signup dispatchSignup={dispatchSignup} {...routerProps} /> }
+                                render={ routerProps => <Signup dispatchSignup={dispatchSignup} {...routerProps} /> }
                         />
                         <Route 
                                 exact
