@@ -1,0 +1,10 @@
+div.logo_title {
+  align-self: center;
+}
+div.logo_title div.logo_title_wrapper {
+  width: 150px;
+}
+div.logo_title div.logo_title_wrapper img {
+  width: 100%;
+  filter: drop-shadow(0px 3px 6px #c2c2c2);
+}
