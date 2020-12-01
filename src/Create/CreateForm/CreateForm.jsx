@@ -18,9 +18,9 @@ const CreateForm = () => {
                                         <div className="note_content">
                                                 <textarea name="" placeholder="✏️"></textarea>
                                         </div>
-                                        <div className="color">
+                                        {/* <div className="color">
                                                 <input type="color" id="favcolor" name="favcolor" />
-                                        </div>
+                                        </div> */}
                                 </div>
                                 <div className="lower_form">
                                         <div className="add_to_collection">
