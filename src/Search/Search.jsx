@@ -5,6 +5,7 @@ import './Search.css'
 import SearchBody from './SearchBody/SearchBody';
 import { notes } from '../data'
 import CreateNote from '../Home/CreateNote/CreateNote';
+import Navbar from '../Home/Navbar/Navbar';
 
 class Search extends Component {
         state = {
@@ -48,6 +49,7 @@ class Search extends Component {
                                                 <CreateNote />
                                         )
                                 }
+                                <Navbar />
                         </div>
                 );
         }
