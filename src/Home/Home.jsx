@@ -26,12 +26,13 @@ class Home extends Component {
                                                         toggleMenuDrawer={this.toggleMenuDrawer} 
                                                         showMenuDrawer={this.state.showMenuDrawer} 
                                                         history={this.props.history}
-                                                        dispatchLogout={this.props.dispatchLogout}
                                                 />
                                         )
                                 }
                                 <HomeHeader toggleMenuDrawer={this.toggleMenuDrawer} />
-                                <HomeBody />
+                                <HomeBody 
+                                        dispatchDeleteNote={this.props.dispatchDeleteNote}
+                                />
                                 <CreateNote />
                                 <Navbar />
                         </div>
