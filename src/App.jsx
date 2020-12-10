@@ -1,35 +1,40 @@
 import { Component } from 'react'
 import Routes from './Routes'
-// import axios from 'axios'
+import UserContext from './Context/userContext' 
+import axios from 'axios'
 
 class App extends Component {
   state = {
     user: {},
-    loggedIn: false
+    notes: [],
+    loggedIn: false,
+    noteEditMode: false
   }
 
-  // getCurrentUser = async () => {
-  //   try {
-  //       const response = await axios(
-  //         'http://localhost:5000/api/v1/users/me',
-  //         { withCredentials: true },
-  //       )
-  //       this.setState({
-  //         user: response.data,
-  //         loggedIn: true
-  //       })
-  //   } catch (error) {
-  //     console.error(error.message)
-  //   }
-  // }
+  getCurrentUser = async () => {
+    try {
+        const response = await axios(
+          'http://localhost:5000/api/v1/users/me',
+          { withCredentials: true },
+        )
+        this.setState({
+          user: response.data,
+          notes: response.data.notes,
+          loggedIn: true
+        })
+    } catch (error) {
+      console.error(error.message)
+    }
+  }
 
-  // componentDidMount() {
-  //   this.getCurrentUser()
-  // }
+  componentDidMount() {
+    this.getCurrentUser()
+  }
 
   dispatchSignup = userInfo => {
     this.setState({
       user: userInfo,
+      notes: userInfo.notes,
       loggedIn: true
     })
   }
@@ -37,28 +42,59 @@ class App extends Component {
   dispatchLogin = userInfo => {
     this.setState({
       user: userInfo,
+      notes: userInfo.notes,
       loggedIn: true
     })
   }
   
   dispatchLogout = () => {
     this.setState({
+      user: {},
+      notes: [],
       loggedIn: false
     })
   }
 
+  dispatchCreateNote = note => {
+    setTimeout(() => {
+      this.setState(prevState => ({
+        notes: [...prevState.notes, note]
+      }))
+    }, 1500);
+  }
+
+  dispatchDeleteNote = note_id => {
+    const notes = [...this.state.notes.filter(note => note._id !== note_id)]
+    this.setState({
+        notes 
+    })
+  }
+
+  // dispatchEditNoteInit = note => {
+  //   this.setState(({
+  //     noteEditMode: true
+  //   }))
+  // }
+
   render() {
-    const { user, loggedIn } = this.state
     return (
-      <div className="App">
-        <Routes 
-          user={user} 
-          loggedIn={loggedIn} 
-          dispatchSignup={this.dispatchSignup}
-          dispatchLogin={this.dispatchLogin}
-          dispatchLogout={this.dispatchLogout} 
-        />
-      </div>
+      <UserContext.Provider 
+        value={{
+          state: this.state,
+          actions: {
+            dispatchSignup: this.dispatchSignup,
+            dispatchLogin: this.dispatchLogin,
+            dispatchLogout: this.dispatchLogout,
+            dispatchCreateNote: this.dispatchCreateNote,
+            dispatchDeleteNote: this.dispatchDeleteNote,
+            // dispatchEditNoteInit: this.dispatchEditNoteInit
+          }
+        }}
+      >
+        <div className="App">
+          <Routes />
+        </div>
+      </UserContext.Provider>
     );
   }
 
