@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, {  useContext, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import MenuFooter from '../Home/MenuDrawer/MenuFooter/MenuFooter'
 import './Login.css'
@@ -7,8 +7,12 @@ import EmailIcon from '@material-ui/icons/Email';
 import VisibilityOffSharpIcon from '@material-ui/icons/VisibilityOffSharp';
 import VisibilitySharpIcon from '@material-ui/icons/VisibilitySharp';
 import axios from 'axios'
+import UserContext from '../Context/userContext'
 
-const Login = ({ history, dispatchLogin }) => {
+const Login = ({ history }) => {
+        const userContext = useContext(UserContext)
+        const { dispatchLogin } = userContext.actions
+
         const [passwordVisible, setPasswordVisible] = useState(false)
         const [email, setEmail] = useState('')
         const [password, setPassword] = useState('')
@@ -41,10 +45,10 @@ const Login = ({ history, dispatchLogin }) => {
                                 },
                                 { withCredentials: true }
                         )
-                        dispatchLogin(response.data)
-                        history.push('/home')
                         setEmail('')
                         setPassword('')
+                        dispatchLogin(response.data)
+                        history.push('/home')
                 } catch (err) {
                         console.error(err)
                 }
