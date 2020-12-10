@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink } from 'react-router-dom'
 import './MenuBody.css'
 import axios from 'axios'
+import UserContext from '../../../Context/userContext'
 
-const MenuBody = ({ history, dispatchLogout}) => {
+const MenuBody = ({ history }) => {
+        const userContext = useContext(UserContext)
+        const { dispatchLogout } = userContext.actions
+
         const handleLogout = async () => {
                 try {
                         await axios.delete(
@@ -30,7 +34,7 @@ const MenuBody = ({ history, dispatchLogout}) => {
                                                 </div>
                                         </NavLink>
                                 </li>
-                                <li className="menu_item" onClick={handleLogout}>
+                                <li className="menu_item">
                                         <NavLink to='#'>
                                                 <div className="menu_icon">
                                                         <i className="fas fa-user-circle"></i>
