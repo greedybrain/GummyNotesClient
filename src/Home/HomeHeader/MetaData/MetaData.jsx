@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import UserContext from '../../../Context/userContext'
 import './MetaData.css'
 import NoteCount from './NoteCount/NoteCount'
 
