@@ -1,12 +1,7 @@
 div.note_data {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 div.note_data div.note_count {
   border-radius: 50%;
   font-size: 1rem;

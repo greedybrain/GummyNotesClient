@@ -4,26 +4,10 @@ div.note_data {
 
         div.note_count {
                 border-radius: 50%;
-                padding: 35%;
-                font-size: .8rem;
+                font-size: 1rem;
                 position: relative;
-                // left: 5px;
-                // bottom: 8px;
                 z-index: 1;
-                background-color: #ff5872;
-                text-shadow: 1px 1px 2px rgba(80, 80, 80, 0.6);
-                -webkit-box-shadow: 0px 4px 13px -3px rgba(0,0,0,0.64);
-                -moz-box-shadow: 0px 4px 13px -3px rgba(0,0,0,0.64);
-                box-shadow: 0px 4px 13px -3px rgba(0,0,0,0.64);
-                color: #fff;
+                background-color: transparent;
+                color: #333;
         }
-        // div.note_icon {
-        //         i {
-        //                 color: #c4c4c4;
-        //                 font-size: 1.5rem;
-        //                 display: inline-block;
-        //                 transform: rotate(5deg);
-        //                 text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
-        //         }
-        // }
 }
