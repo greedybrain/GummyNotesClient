@@ -12,9 +12,9 @@ class Home extends Component {
         }
 
         toggleMenuDrawer = () => {
-                this.setState({
-                        showMenuDrawer: !this.state.showMenuDrawer
-                })
+                this.setState(prevState => ({
+                        showMenuDrawer: !prevState.showMenuDrawer
+                }))
         }
 
         render() {
