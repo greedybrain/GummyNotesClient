@@ -1,62 +1,46 @@
-li.note {
-        height: 150px;
-        text-align: center;
-        font-family: 'Nanum Pen Script', cursive;
-        display: flex;
-        flex-direction: column;
-        -webkit-box-shadow: 0px 4px 13px -3px rgba(0,0,0,0.64);
-        -moz-box-shadow: 0px 4px 13px -3px rgba(0,0,0,0.64);
-        box-shadow: 0px 4px 13px -3px rgba(0,0,0,0.64);
-        overflow-y: scroll;
-        cursor: pointer;
-
-        &:nth-of-type(1),
-        &:nth-of-type(4),
-        &:nth-of-type(7) {
-                background-color: #ff5872;
-        }
-        &:nth-of-type(5),
-        &:nth-of-type(11),
-        &:nth-of-type(8) {
-                background-color: #7bff00;
-        }
-        &:nth-of-type(2),
-        &:nth-of-type(3),
-        &:nth-of-type(9) {
-                background-color: #00c8ff;
-        }
-        &:nth-of-type(10),
-        &:nth-of-type(6),
-        &:nth-of-type(12) {
-                background-color: #ffe200;
-        }
-
+a.note {
+        display: block;
+        margin: 0 auto 25px auto;
+        width: 85%;
         &:nth-of-type(odd) {
-                position: relative;
-                left: 5px;
-                transform: rotate(-5deg);
+                transform: rotate(-2deg);
         }
         &:nth-of-type(even) {
-                position: relative;
-                right: 5px;
-                transform: rotate(5deg);
-                margin-top: 25px;
+                transform: rotate(2deg);
         }
+        li.note {
+                height: 250px;
+                // text-align: center;
+                font-family: 'Nanum Pen Script', cursive;
+                display: flex;
+                flex-direction: column;
+                -webkit-box-shadow: 0px 4px 13px -3px #000000a3;
+                -moz-box-shadow: 0px 4px 13px -3px #000000a3;
+                box-shadow: 0px 4px 13px -3px #000000a3;
+                overflow-y: scroll;
+                cursor: pointer;
+        
+                div.title {
+                        align-self: flex-start;
+                        padding: 10px 0 0 10px;
+                        height: 10vh;
+                        font-size: 2rem;
 
-        div.title {
-                align-self: flex-start;
-                padding: 10px 0 0 10px;
-                height: 10vh;
-        }
-
-        div.content {
-                align-self: center;
-                padding: 10px 10px;
-                height: 90vh;
-        }
-        div.created {
-                align-self: flex-start;
-                padding: 0 0 10px 10px;
-                font-size: .9rem;
+                        span {
+                                text-decoration: underline;
+                        }
+                }
+        
+                div.content {
+                        align-self: center;
+                        padding: 15px 10px;
+                        height: 90vh;
+                        font-size: 1.7rem;
+                }
+                div.created {
+                        align-self: flex-start;
+                        padding: 0 0 10px 10px;
+                        font-size: 1.2rem;
+                }
         }
 }
