@@ -1,0 +1,96 @@
+div.show_note_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+div.show_note_wrapper div.show_note_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 7%;
+  height: 7vh;
+}
+
+div.show_note_wrapper div.show_note_header div.back_arrow {
+  font-size: 1.3rem;
+  text-shadow: 1px 2px 0px #a2a2a2b8;
+  margin-right: 15px;
+}
+
+div.show_note_wrapper div.show_note_header div.note_title h3 {
+  font-size: 1.2rem;
+  color: #818181;
+}
+
+div.show_note_wrapper div.show_note_body {
+  width: 85%;
+  margin: 50px auto 0 auto;
+  height: 40vh;
+  padding: 20px;
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 1.5rem;
+  -webkit-box-shadow: 0px 4px 13px -3px #000000a3;
+  box-shadow: 0px 4px 13px -3px #000000a3;
+}
+
+div.show_note_wrapper div.show_note_body div.note_header {
+  height: 10%;
+  font-size: 2rem;
+}
+
+div.show_note_wrapper div.show_note_body div.note_header span {
+  text-decoration: underline;
+}
+
+div.show_note_wrapper div.show_note_body div.note_body {
+  padding-top: 20px;
+  height: 85%;
+  overflow-y: scroll;
+  font-size: 1.7rem;
+}
+
+div.show_note_wrapper div.show_note_body div.note_footer {
+  font-size: 1.2rem;
+}
+
+div.show_note_wrapper div.collection_name {
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+div.show_note_wrapper div.note_actions {
+  width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10px 0;
+}
+
+div.show_note_wrapper div.note_actions div.edit_note,
+div.show_note_wrapper div.note_actions div.delete_note {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50px;
+  background-color: #cacaca;
+}
+
+div.show_note_wrapper div.note_actions div.edit_note i,
+div.show_note_wrapper div.note_actions div.delete_note i {
+  font-size: 1.3rem;
+  color: #fff;
+  text-shadow: 1px 2px 0px #a2a2a2b8;
+}
