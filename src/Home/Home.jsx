@@ -11,9 +11,9 @@ class Home extends Component {
                 showMenuDrawer: false
         }
 
-        toggleMenuDrawer = shouldOpen => {
+        toggleMenuDrawer = () => {
                 this.setState({
-                        showMenuDrawer: shouldOpen
+                        showMenuDrawer: !this.state.showMenuDrawer
                 })
         }
 
