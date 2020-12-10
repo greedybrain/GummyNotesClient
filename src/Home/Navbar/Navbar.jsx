@@ -17,7 +17,7 @@ const Navbar = () => {
                                         </NavLink>
                                 </li>
                                 <li className="navitem item3">
-                                        <NavLink to="#">
+                                        <NavLink to="/history">
                                                 <i className="fas fa-history"></i>
                                         </NavLink>
                                 </li>
