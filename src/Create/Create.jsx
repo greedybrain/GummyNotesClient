@@ -9,7 +9,7 @@ class Create extends Component {
                 return (
                         <div className="create_wrapper">
                                 <CreateHeader history={this.props.history} />
-                                <CreateForm />
+                                <CreateForm history={this.props.history} />
                                 <Navbar />
                         </div>
                 );
