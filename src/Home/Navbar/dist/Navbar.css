@@ -1,0 +1,39 @@
+nav.navbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 8%;
+  height: 10vh;
+}
+nav.navbar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+nav.navbar ul li {
+  padding: 10px 12px;
+  display: flex;
+  border-radius: 15px;
+}
+nav.navbar ul li a {
+  display: inline-block;
+  color: #fff;
+}
+nav.navbar ul li.navitem a i {
+  display: inline-block;
+  font-size: 1.7rem;
+  text-shadow: 1px 2px 0px #a2a2a2b8;
+}
+nav.navbar ul li.item1 a i {
+  color: #ff5872;
+}
+nav.navbar ul li.item2 a i {
+  color: #00c8ff;
+}
+nav.navbar ul li.item3 a i {
+  color: #ffe200;
+}
+nav.navbar ul li.item4 a i {
+  color: #a5a5a5;
+}
