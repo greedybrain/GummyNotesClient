@@ -1,0 +1,75 @@
+div.history_page_wrapper {
+        height: 100vh;
+
+        div.header {
+                display: flex;
+                align-items: center;
+                padding: 0 25px;
+                border-bottom: 1px solid #cacaca38;
+                height: 8vh;
+
+                div.back_arrow {
+                        font-size: 1.3rem;
+                        margin-right: 15px;
+                        color: #ffe200;
+                        text-shadow: 1px 2px 0px #a2a2a2b8;
+                }
+
+                div.history_header_label {
+                        h3 {
+                                font-size: 1.2rem;
+                                color: #818181;
+                        }
+                }
+        }
+
+        div.history {
+                height: 82vh;
+                overflow-y: scroll;
+                div.history_data {
+                        h2 {
+                                padding: 15px 7%;
+                                color: #5a5a5ac2;
+                                border-bottom: 1px solid #b8b8b838;
+                        }
+                        ul {
+                                li.note_data {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding: 10px 7%;
+                                        border-bottom: 1px solid #b8b8b838;
+        
+                                        div.note_color_and_title {
+                                                display: flex;
+                                                align-items: center;
+        
+                                                div.note_color {
+                                                        margin-right: 15px;
+                                                        padding: 1px;
+                                                        overflow: scroll;
+        
+                                                        div.scribble_title {
+                                                                font-size: 5px;
+                                                                padding: 2px;
+                                                        }
+                                                        
+                                                        div.scribble_content {
+                                                                font-size: 5px;
+                                                                padding: 2px;
+                                                        }
+                                                }
+                                        }
+        
+                                        div.timestamp {
+                                                align-self: flex-end;
+                                                font-size: .8rem;
+                                        }
+                                }
+                        }
+                }
+        }
+
+        nav.navbar {
+                height: 10vh;
+        }
+}
