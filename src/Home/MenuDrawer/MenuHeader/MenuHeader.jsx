@@ -8,7 +8,7 @@ const MenuHeader = ({ toggleMenuDrawer }) => {
                 <div className="menu_header">
                         <div className="close_and_logo">
                                 <Logo />
-                                <div className="close" onClick={() => toggleMenuDrawer(false)}>
+                                <div className="close" onClick={toggleMenuDrawer}>
                                         <CloseIcon style={{ color: '#444444', fontSize: '2rem' }} />
                                 </div>
                         </div>
