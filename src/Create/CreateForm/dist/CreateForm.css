@@ -2,34 +2,30 @@ div.create_form,
 div.update_form {
   width: 100%;
 }
-
 div.create_form form,
 div.update_form form {
   width: 80%;
   margin: 45px auto 0 auto;
 }
-
 div.create_form form div.upper_form,
 div.update_form form div.upper_form {
   width: 100%;
   padding: 15px;
   -webkit-box-shadow: inset 0px 0px 23px -13px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: inset 0px 0px 23px -13px rgba(0, 0, 0, 0.45);
   box-shadow: inset 0px 0px 23px -13px rgba(0, 0, 0, 0.45);
   background-color: #ff5872;
 }
-
 div.create_form form div.upper_form div.title_input,
 div.create_form form div.upper_form div.note_content,
 div.update_form form div.upper_form div.title_input,
 div.update_form form div.upper_form div.note_content {
   margin: 0 auto;
 }
-
 div.create_form form div.upper_form div.title_input,
 div.update_form form div.upper_form div.title_input {
   padding-left: 5px;
 }
-
 div.create_form form div.upper_form div.title_input input,
 div.update_form form div.upper_form div.title_input input {
   border-top: 0;
@@ -41,34 +37,16 @@ div.update_form form div.upper_form div.title_input input {
   font-size: 1.5rem;
   background-color: transparent;
   color: #000;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
 }
-
-div.create_form form div.upper_form div.title_input input::-webkit-input-placeholder,
-div.update_form form div.upper_form div.title_input input::-webkit-input-placeholder {
-  color: #000;
-}
-
-div.create_form form div.upper_form div.title_input input:-ms-input-placeholder,
-div.update_form form div.upper_form div.title_input input:-ms-input-placeholder {
-  color: #000;
-}
-
-div.create_form form div.upper_form div.title_input input::-ms-input-placeholder,
-div.update_form form div.upper_form div.title_input input::-ms-input-placeholder {
-  color: #000;
-}
-
 div.create_form form div.upper_form div.title_input input::placeholder,
 div.update_form form div.upper_form div.title_input input::placeholder {
   color: #000;
 }
-
 div.create_form form div.upper_form div.note_content,
 div.update_form form div.upper_form div.note_content {
   height: 200px;
 }
-
 div.create_form form div.upper_form div.note_content textarea,
 div.update_form form div.upper_form div.note_content textarea {
   border: none;
@@ -79,23 +57,14 @@ div.update_form form div.upper_form div.note_content textarea {
   outline: none;
   background-color: transparent;
   font-size: 1.5rem;
-  font-family: 'Nanum Pen Script', cursive;
+  font-family: "Nanum Pen Script", cursive;
 }
-
 div.create_form form div.upper_form div.color,
 div.update_form form div.upper_form div.color {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
 }
-
 div.create_form form div.upper_form div.color input,
 div.update_form form div.upper_form div.color input {
   background-color: transparent;
@@ -105,22 +74,18 @@ div.update_form form div.upper_form div.color input {
   outline: none;
   cursor: pointer;
 }
-
 div.create_form form div.lower_form,
 div.update_form form div.lower_form {
   padding: 25px 0 0 0;
 }
-
 div.create_form form div.lower_form div.label,
 div.update_form form div.lower_form div.label {
   margin-bottom: 15px;
 }
-
 div.create_form form div.lower_form div.create_collection,
 div.update_form form div.lower_form div.create_collection {
   margin-top: 5px;
 }
-
 div.create_form form div.lower_form div.create_collection button,
 div.update_form form div.lower_form div.create_collection button {
   background-color: transparent;
@@ -129,7 +94,6 @@ div.update_form form div.lower_form div.create_collection button {
   cursor: pointer;
   font-size: 1rem;
 }
-
 div.create_form form div.submit_button,
 div.update_form form div.submit_button {
   display: inline-block;
@@ -138,14 +102,12 @@ div.update_form form div.submit_button {
   bottom: 100px;
   z-index: 100;
 }
-
 div.create_form form div.submit_button button,
 div.update_form form div.submit_button button {
   background-color: transparent;
   outline: none;
   border: none;
 }
-
 div.create_form form div.submit_button button i,
 div.update_form form div.submit_button button i {
   font-size: 3rem;
