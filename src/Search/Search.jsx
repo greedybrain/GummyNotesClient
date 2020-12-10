@@ -3,20 +3,16 @@ import SearchForm from './SearchForm/SearchForm';
 import SearchHeader from './SearchHeader/SearchHeader';
 import './Search.css'
 import SearchBody from './SearchBody/SearchBody';
-import { notes } from '../data'
 import CreateNote from '../Home/CreateNote/CreateNote';
 import Navbar from '../Home/Navbar/Navbar';
+import UserContext from '../Context/userContext';
+
 
 class Search extends Component {
-        state = {
-                allNotes: [],
-                results: []
-        }
+         static contextType = UserContext
 
-        componentDidMount() {
-                this.setState({
-                        allNotes: notes
-                })
+        state = {
+                results: []
         }
 
         handleNoteSearch = query => {
@@ -25,7 +21,8 @@ class Search extends Component {
                                 results: []
                         })
                 } else {
-                        const notes = this.state.allNotes.filter(note => {
+                        let notes = this.context.state.notes
+                        notes = notes.filter(note => {
                                 let title = note.title.toLowerCase()
                                 let content = note.content.toLowerCase()
                                 query = query.toLowerCase()
@@ -38,6 +35,7 @@ class Search extends Component {
         }
         
         render() {
+                // console.log(this.context)
                 const { results } = this.state
                 return (
                         <div className="search_page_wrapper">
