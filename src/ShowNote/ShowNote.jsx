@@ -21,7 +21,7 @@ const ShowNote = ({ history, match }) => {
                 const { _id: userId } = userContext.state.user
                 await axios.delete(
                         `https://gummy-notes.herokuapp.com/api/v1/users/${ userId }/notes/${ note._id }`,
-                        { withCredentials: true }
+                        // { withCredentials: true }
                 )
                 dispatchDeleteNote(note._id)
                 history.push('/home')

@@ -15,7 +15,7 @@ class App extends Component {
     try {
         const response = await axios(
           'https://gummy-notes.herokuapp.com/api/v1/users/me',
-          { withCredentials: true },
+          // { withCredentials: true },
         )
         this.setState({
           user: response.data,
