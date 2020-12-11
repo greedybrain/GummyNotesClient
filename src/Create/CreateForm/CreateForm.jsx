@@ -37,7 +37,7 @@ const CreateForm = ({ history }) => {
                 if (!noteEditMode) {
                         try {
                                 const { data } = await axios.post(
-                                        `http://localhost:5000/api/v1/users/${user._id}/notes`,
+                                        `https://gummy-notes.herokuapp.com/api/v1/users/${user._id}/notes`,
                                         {
                                                 title,
                                                 content,

@@ -52,7 +52,7 @@ const Signup = ({ history }) => {
                 event.preventDefault()
                 try {
                         const response = await axios.post(
-                                'http://localhost:5000/api/v1/users',
+                                'https://gummy-notes.herokuapp.com/api/v1/users',
                                 {
                                         name,
                                         email,

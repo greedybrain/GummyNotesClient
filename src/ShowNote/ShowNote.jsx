@@ -20,7 +20,7 @@ const ShowNote = ({ history, match }) => {
         const handleDelete = async () => {
                 const { _id: userId } = userContext.state.user
                 await axios.delete(
-                        `http://localhost:5000/api/v1/users/${ userId }/notes/${ note._id }`,
+                        `https://gummy-notes.herokuapp.com/api/v1/users/${ userId }/notes/${ note._id }`,
                         { withCredentials: true }
                 )
                 dispatchDeleteNote(note._id)

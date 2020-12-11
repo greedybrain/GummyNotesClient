@@ -14,7 +14,7 @@ class App extends Component {
   getCurrentUser = async () => {
     try {
         const response = await axios(
-          'http://localhost:5000/api/v1/users/me',
+          'https://gummy-notes.herokuapp.com/api/v1/users/me',
           { withCredentials: true },
         )
         this.setState({

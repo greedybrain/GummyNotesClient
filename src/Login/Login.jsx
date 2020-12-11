@@ -38,7 +38,7 @@ const Login = ({ history }) => {
                 event.preventDefault()
                 try {
                         const response = await axios.post(
-                                'http://localhost:5000/api/v1/auth',
+                                'https://gummy-notes.herokuapp.com/api/v1/auth',
                                 {
                                         email,
                                         password,
