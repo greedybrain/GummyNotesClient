@@ -43,7 +43,7 @@ const CreateForm = ({ history }) => {
                                                 content,
                                                 color
                                         },
-                                        // { withCredentials: true }
+                                        { withCredentials: true }
                                 )
                                 dispatchCreateNote(data)
                                 history.push('/home')

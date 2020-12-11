@@ -59,7 +59,7 @@ const Signup = ({ history }) => {
                                         password,
                                         confirmPassword
                                 },
-                                // { withCredentials: true }
+                                { withCredentials: true }
                         )
                         setName('')
                         setEmail('')
